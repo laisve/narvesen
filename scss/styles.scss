@@ -1,0 +1,251 @@
+$background-grey: #e6e8e9;
+$font-grey: #9da1a8;
+$black-blue: #455764;
+$dark-grey: #575757;
+$melsva: #dae9ff;
+$tamsiai-melsva: #879fc4;
+$zalia: #58915e;
+
+$break-large: 992px;
+$break-sm: 768px;
+$break-xs: 576px;
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item {
+	a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		span {
+			color: red;
+		}
+	}
+	#e-narv-icon {
+		background-color: red;
+		width: 45px;
+		height: 50px;
+		text-align: center;
+		padding: 10px 0;
+		i {
+			color: white;
+			vertical-align: middle;
+		}
+	}
+}
+.red {
+	display: flex;
+	span {
+		margin-left: 15px;
+		margin-top: 7px;
+	}
+}
+
+/* Pagrindinis turinys */
+
+.main {
+	background-color: $background-grey;
+}
+.top-row {
+	padding: 30px 0;
+	a {
+		color: $font-grey;
+		font-size: 13px;
+	}
+}
+.breadcrumb {
+	background: none;
+	padding: 0;
+	margin: 3px 0 0 0;
+	li:first-child:before{
+		content: "";
+	}
+	li {
+		display: inline-block;
+	}
+	li:before {
+		content: "/";
+		color: $font-grey;
+	}
+}
+.heading {
+	text-align: center;
+	h3 {
+		text-transform: uppercase;
+		color: $black-blue;
+	}
+}
+.dalintis {
+	text-align: right;
+	i {
+		margin-left: 7px;
+	}
+}
+
+/* Šoninis meniu */
+
+.categories {
+	background: $dark-grey;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+	@media screen and (max-width: $break-large) {
+		font-size: 14px;
+	}
+	.sidebar-title {
+		position: relative;
+		font-size: 16px;
+		background: $tamsiai-melsva;
+		color: $melsva;
+		margin: 0;
+		padding: 17px 0 15px 22px;
+	}
+	.sidebar-title:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-top: 15px solid $background-grey;
+		border-left: 15px solid $tamsiai-melsva;
+	}
+	#arrow-down {
+		position: absolute;
+		display: inline-block;
+		right: 17px;
+	}
+	.clearfix {
+		list-style: none;
+		padding-top: 10px;
+		padding-bottom: 30px;
+		li {
+			padding-top: 8px;
+			margin-left: -12px;
+			a {
+				color: white;
+				display: flex;
+				img {
+					width: 50px;
+					height: 50px;
+					border: 3px solid white;
+					border-radius: 7px;
+				}
+				span {
+					padding: 0 0 0 10px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+#content {
+	.row {
+		margin-bottom: 15px;
+		@media screen and (max-width: $break-sm) {
+		.image:nth-child(2) {
+			margin-top: 10px;
+		}
+		}
+	}
+}
+.image {
+	padding-right: 7px;
+	padding-left: 7px;	
+	img {
+		width: 100%;
+	}
+}
+.text {
+	background: white;
+	padding: 25px 10px 15px 15px;
+	@media screen and (max-width: $break-large) {
+		margin: 10px 7px 0 7px;
+	}
+	h2 {
+		text-transform: uppercase;
+		color: $zalia;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	p {
+		color: $font-grey;
+		font-size: 15px;
+	}
+}
+
+/* Footeris */
+
+footer {
+	padding-top: 35px;
+}
+.footer-title {
+	text-transform: uppercase;
+	color: black;
+	font-size: 15px;
+}
+.footer-text {
+	font-size: 13px;
+	color: $font-grey;
+	@media screen and (max-width: $break-xs) {
+		text-align: center;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			a {
+				color: $font-grey;
+			}
+		}
+	}
+	.form-inline {
+		.form-control {
+			background: white;
+		}
+		button {
+			background: white;
+			border: 1px solid rgba(0,0,0,.15);
+			text-transform: uppercase;
+			font-size: 15px;
+		}
+	}
+}
+.lower-footer-sections {
+	.footer-text {
+		display: inline-block;
+	}
+	.footer-contacts {
+		display: inline-block;
+		margin-right: 25px;
+		font-size: 17px;
+
+		i {
+			margin-left: 15px;
+			margin-right: 8px;
+		}
+	}
+	.button-red {
+		text-transform: uppercase;
+		background: red;
+		color: white;
+		font-size: 15px;
+		border: none;
+		padding: 8px 15px;
+		margin-left: 15px;
+	}
+}
+#bottom-footer {
+	background: #455764;
+	color: white;
+	font-size: 12px;
+	.container {
+		padding-top: 12px;
+	}
+}
+.social {
+	float: right;
+	a {
+		color: white;
+		padding: 0 5px;
+	}
+}

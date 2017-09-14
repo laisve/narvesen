@@ -1,0 +1,199 @@
+@charset "UTF-8";
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+.nav-item a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px; }
+  .nav-item a span {
+    color: red; }
+
+.nav-item #e-narv-icon {
+  background-color: red;
+  width: 45px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0; }
+  .nav-item #e-narv-icon i {
+    color: white;
+    vertical-align: middle; }
+
+.red {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .red span {
+    margin-left: 15px;
+    margin-top: 7px; }
+
+/* Pagrindinis turinys */
+.main {
+  background-color: #e6e8e9; }
+
+.top-row {
+  padding: 30px 0; }
+  .top-row a {
+    color: #9da1a8;
+    font-size: 13px; }
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 3px 0 0 0; }
+  .breadcrumb li:first-child:before {
+    content: ""; }
+  .breadcrumb li {
+    display: inline-block; }
+  .breadcrumb li:before {
+    content: "/";
+    color: #9da1a8; }
+
+.heading {
+  text-align: center; }
+  .heading h3 {
+    text-transform: uppercase;
+    color: #455764; }
+
+.dalintis {
+  text-align: right; }
+  .dalintis i {
+    margin-left: 7px; }
+
+/* Šoninis meniu */
+.categories {
+  background: #575757;
+  margin: 0 0 20px 0;
+  text-transform: uppercase; }
+  @media screen and (max-width: 992px) {
+    .categories {
+      font-size: 14px; } }
+  .categories .sidebar-title {
+    position: relative;
+    font-size: 16px;
+    background: #879fc4;
+    color: #dae9ff;
+    margin: 0;
+    padding: 17px 0 15px 22px; }
+  .categories .sidebar-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 15px solid #e6e8e9;
+    border-left: 15px solid #879fc4; }
+  .categories #arrow-down {
+    position: absolute;
+    display: inline-block;
+    right: 17px; }
+  .categories .clearfix {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 30px; }
+    .categories .clearfix li {
+      padding-top: 8px;
+      margin-left: -12px; }
+      .categories .clearfix li a {
+        color: white;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .categories .clearfix li a img {
+          width: 50px;
+          height: 50px;
+          border: 3px solid white;
+          border-radius: 7px; }
+        .categories .clearfix li a span {
+          padding: 0 0 0 10px;
+          vertical-align: middle; }
+
+#content .row {
+  margin-bottom: 15px; }
+  @media screen and (max-width: 768px) {
+    #content .row .image:nth-child(2) {
+      margin-top: 10px; } }
+
+.image {
+  padding-right: 7px;
+  padding-left: 7px; }
+  .image img {
+    width: 100%; }
+
+.text {
+  background: white;
+  padding: 25px 10px 15px 15px; }
+  @media screen and (max-width: 992px) {
+    .text {
+      margin: 10px 7px 0 7px; } }
+  .text h2 {
+    text-transform: uppercase;
+    color: #58915e;
+    font-weight: bold;
+    font-size: 24px; }
+  .text p {
+    color: #9da1a8;
+    font-size: 15px; }
+
+/* Footeris */
+footer {
+  padding-top: 35px; }
+
+.footer-title {
+  text-transform: uppercase;
+  color: black;
+  font-size: 15px; }
+
+.footer-text {
+  font-size: 13px;
+  color: #9da1a8; }
+  @media screen and (max-width: 576px) {
+    .footer-text {
+      text-align: center; } }
+  .footer-text ul {
+    padding-left: 0; }
+    .footer-text ul li {
+      list-style: none; }
+      .footer-text ul li a {
+        color: #9da1a8; }
+  .footer-text .form-inline .form-control {
+    background: white; }
+  .footer-text .form-inline button {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    font-size: 15px; }
+
+.lower-footer-sections .footer-text {
+  display: inline-block; }
+
+.lower-footer-sections .footer-contacts {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 17px; }
+  .lower-footer-sections .footer-contacts i {
+    margin-left: 15px;
+    margin-right: 8px; }
+
+.lower-footer-sections .button-red {
+  text-transform: uppercase;
+  background: red;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 15px; }
+
+#bottom-footer {
+  background: #455764;
+  color: white;
+  font-size: 12px; }
+  #bottom-footer .container {
+    padding-top: 12px; }
+
+.social {
+  float: right; }
+  .social a {
+    color: white;
+    padding: 0 5px; }
