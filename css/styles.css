@@ -76,6 +76,9 @@ html, body {
     color: #dae9ff;
     margin: 0;
     padding: 17px 0 15px 22px; }
+    @media screen and (max-width: 768px) {
+      .categories .sidebar-title {
+        margin-top: 8px; } }
   .categories .sidebar-title:before {
     content: '';
     position: absolute;
@@ -111,7 +114,7 @@ html, body {
 
 #content .row {
   margin-bottom: 15px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 576px) {
     #content .row .image:nth-child(2) {
       margin-top: 10px; } }
 
@@ -164,6 +167,9 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
     font-size: 15px; }
+  @media screen and (max-width: 576px) {
+    .footer-text .form-inline .form-group {
+      margin-bottom: 0; } }
 
 .lower-footer-sections .footer-text {
   display: inline-block; }
@@ -191,6 +197,10 @@ footer {
   font-size: 12px; }
   #bottom-footer .container {
     padding-top: 12px; }
+
+@media screen and (max-width: 576px) {
+  .bottom-footer-part {
+    width: 50%; } }
 
 .social {
   float: right; }

@@ -13,7 +13,6 @@ $break-xs: 576px;
 html, body {
 	font-family: 'Open Sans', sans-serif;
 }
-
 .nav-item {
 	a {
 		text-transform: uppercase;
@@ -100,6 +99,9 @@ html, body {
 		color: $melsva;
 		margin: 0;
 		padding: 17px 0 15px 22px;
+		@media screen and (max-width: $break-sm) {
+			margin-top: 8px;
+		}
 	}
 	.sidebar-title:before {
 		content: '';
@@ -141,10 +143,10 @@ html, body {
 #content {
 	.row {
 		margin-bottom: 15px;
-		@media screen and (max-width: $break-sm) {
-		.image:nth-child(2) {
-			margin-top: 10px;
-		}
+		@media screen and (max-width: $break-xs) {
+			.image:nth-child(2) {
+				margin-top: 10px;
+			}
 		}
 	}
 }
@@ -208,6 +210,11 @@ footer {
 			text-transform: uppercase;
 			font-size: 15px;
 		}
+		.form-group {
+			@media screen and (max-width: $break-xs) {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 .lower-footer-sections {
@@ -240,6 +247,11 @@ footer {
 	font-size: 12px;
 	.container {
 		padding-top: 12px;
+	}
+}
+.bottom-footer-part {
+	@media screen and (max-width: $break-xs) {
+		width: 50%;
 	}
 }
 .social {
